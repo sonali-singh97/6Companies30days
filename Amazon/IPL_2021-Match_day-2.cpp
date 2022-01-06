@@ -10,10 +10,8 @@ class Solution {
       
         deque<int> dq;
         vector<int> output;
-        int i = 0;
-        
    
-        for (; i < n; i ++){
+        for (int i = 0; i < n; i ++){
             
             // delete out of the range indexes
             while(!dq.empty() && dq.front() <= i-k) dq.pop_front();
